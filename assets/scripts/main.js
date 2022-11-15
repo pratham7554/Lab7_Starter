@@ -66,9 +66,9 @@ function initializeServiceWorker() {
       }
   })
 }
-else {
-  return;
-}
+//else {
+//  return;
+//}
 
 /**
  * Reads 'recipes' from localStorage and returns an array of
@@ -85,9 +85,9 @@ async function getRecipes() {
   if(localStorage.getItem('recipes') != null) {
     return JSON.parse(localStorage.getItem('recipes'));
   }
-  else {
-    return;
-  }
+  //else {
+  //  return;
+  //}
   /**************************/
   // The rest of this method will be concerned with requesting the recipes
   // from the network

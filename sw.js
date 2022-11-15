@@ -44,12 +44,12 @@ self.addEventListener('fetch', function (event) {
       if (cachedResponse) {
         return cachedResponse;
       }
-      else {
+      //else {
         return fetch(event.request).then((fetchedResponse) => {
           cache.put(event.request, fetchedResponse.clone());
           return fetchedResponse;
         });
-      }
+      //}
     });
   })); 
 });

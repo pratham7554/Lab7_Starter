@@ -68,9 +68,6 @@ function initializeServiceWorker() {
     })
   }
 }
-else {
-  return;
-}
 
 /**
  * Reads 'recipes' from localStorage and returns an array of
@@ -86,9 +83,6 @@ async function getRecipes() {
   //            If there are recipes, return them.
   if(localStorage.getItem('recipes') != null) {
     return JSON.parse(localStorage.getItem('recipes'));
-  }
-  else {
-    return;
   }
   /**************************/
   // The rest of this method will be concerned with requesting the recipes
